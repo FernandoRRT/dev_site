@@ -15,7 +15,8 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        $data = Profile::with('id_profile')->find('1');
+        $data = Profile::all();
+        // $data = Profile::with('id_profile')->find('1');
         return response()->json($data);
     }
 

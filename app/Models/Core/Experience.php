@@ -21,6 +21,6 @@ class Experience extends Model
     ];
     public function assign()
     {
-        return $this->hasOne(ExpAssign::class, 'id_experience');
+        return $this->hasMany(ExpAssign::class, 'id_experience');
     }
 }

@@ -26,27 +26,27 @@ class Profile extends Model
 
     public function abilities()
     {
-        return $this->hasOne(Abilities::class, 'id_profile');
+        return $this->hasMany(Abilities::class, 'id_profile');
     }
     public function courses()
     {
-        return $this->hasOne(Courses::class, 'id_profile');
+        return $this->hasMany(Courses::class, 'id_profile');
     }
     public function education()
     {
-        return $this->hasOne(Education::class, 'id_profile');
+        return $this->hasMany(Education::class, 'id_profile');
     }
     public function experience()
     {
-        return $this->hasOne(Experience::class, 'id_profile');
+        return $this->hasMany(Experience::class, 'id_profile');
     }
     public function frameworks()
     {
-        return $this->hasOne(Frameworks::class, 'id_profile');
+        return $this->hasMany(Frameworks::class, 'id_profile');
     }
     public function languages()
     {
-        return $this->hasOne(Languages::class, 'id_profile');
+        return $this->hasMany(Languages::class, 'id_profile');
     }
 
 }
